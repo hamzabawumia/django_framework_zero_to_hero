@@ -1,0 +1,162 @@
+Here's the Django version, adapted for the same audience (beginners + junior devs) and mapped to your learning framework:
+
+📘 Django: Zero to Hero
+A Community Open Source Book
+
+Part 0 — Before You Begin
+Orientation and prerequisites
+
+What is this book and how to use it
+Who this book is for
+Prerequisites checklist (Python basics, terminal comfort, code editor setup)
+How to get help (Django docs, Stack Overflow, Django Forum, Discord)
+
+
+Part 1 — Understanding Django (The Why)
+Mapped to: "Understand the why + Learn the basics + Comparisons"
+
+What is Django? The problem it solves
+How Django compares to other frameworks (Flask, FastAPI, Laravel, Rails)
+The "batteries included" philosophy — what it means and why it matters
+Key concepts and terminology (project, app, model, view, template, URL, ORM, migration)
+The Django ecosystem — DRF, Celery, Channels, Wagtail, etc.
+Advantages, limitations, and when NOT to use Django
+
+
+Part 2 — Setting Up Your Environment (Getting Hands-On Early)
+Mapped to: "Hands-on basics"
+
+Installing Python and managing versions (pyenv)
+Virtual environments — what they are and why you always need one
+Installing Django and understanding pip
+Creating your first Django project
+Understanding the project directory structure
+Running the development server
+Common setup mistakes and how to fix them
+
+
+Part 3 — Django Core: Models & the ORM (Your Data Layer)
+Mapped to: "Core concepts + FAQs + Common mistakes"
+
+What are models and how Django maps them to database tables
+Field types and when to use each
+Relationships — ForeignKey, ManyToMany, OneToOne
+Migrations — how they work and how to manage them safely
+Querying with the Django ORM (filter, exclude, annotate, aggregate)
+The Django Admin — setting it up and customizing it
+FAQ: Most asked questions about models and the ORM
+Pitfalls: N+1 queries, migration conflicts, over-relying on the Admin
+
+
+Part 4 — Django Core: Views & URLs (Handling Requests)
+Mapped to: "Core concepts + FAQs + Common mistakes"
+
+How Django handles a request — the request/response cycle
+Function-Based Views (FBVs) vs Class-Based Views (CBVs)
+URL routing — urls.py, path(), include(), named URLs
+Passing context to templates
+Redirects, status codes, and HttpResponse
+Middleware — what it is and common use cases
+FAQ: FBV vs CBV — which should I use?
+Pitfalls: Common URL and view mistakes beginners make
+
+
+Part 5 — Django Core: Templates & Forms (The User Interface)
+Mapped to: "Core concepts + FAQs + Common mistakes"
+
+The Django template language — variables, tags, filters
+Template inheritance — base.html and {% block %}
+Static files — CSS, JS, images in Django
+Django Forms — building, validating, and processing forms
+ModelForms — generating forms directly from models
+Handling file and image uploads
+FAQ: Most asked template and forms questions
+Pitfalls: Common mistakes with forms, CSRF, and static files
+
+
+Part 6 — Authentication & Security (Keeping It Safe)
+Mapped to: "Core concepts + FAQs + Common mistakes"
+
+Django's built-in auth system — users, groups, permissions
+Login, logout, password reset out of the box
+Extending the User model (AbstractUser vs AbstractBaseUser)
+Protecting views with @login_required and UserPassesTestMixin
+Django security fundamentals — CSRF, XSS, SQL injection, clickjacking
+Environment variables and secrets management
+FAQ: Most asked auth questions
+Pitfalls: Common security mistakes in Django projects
+
+
+Part 7 — Django REST Framework (Building APIs)
+Mapped to: "Core concepts + FAQs + Common mistakes"
+
+What is DRF and when to use it vs Django's built-in views
+Serializers — what they are and how they work
+API Views, ViewSets, and Routers
+Authentication in APIs — Token, Session, JWT
+Permissions and throttling
+Filtering, searching, and pagination
+FAQ: Most asked DRF questions
+Pitfalls: Common DRF mistakes and over-engineering traps
+
+
+Part 8 — Deployment & DevOps (Taking It to Production)
+Mapped to: "Core concepts + FAQs + Common mistakes"
+
+Production vs development — what changes and why
+Configuring settings.py for multiple environments
+Deploying on a VPS with Gunicorn + NGINX
+Docker-based Django deployment
+Database setup in production (PostgreSQL)
+Static and media files in production (WhiteNoise, S3)
+Setting up CI/CD with GitHub Actions
+FAQ: Most asked deployment questions
+Pitfalls: Common deployment mistakes (DEBUG=True in prod, exposed secrets, etc.)
+
+
+Part 9 — Advanced Concepts
+Mapped to: "Advanced concepts"
+
+Caching strategies (per-view, per-site, low-level cache API)
+Background tasks with Celery and Redis
+Django Channels — WebSockets and real-time features
+Custom management commands
+Django signals — when to use them and when to avoid them
+Writing tests (unit tests, integration tests, pytest-django)
+Performance optimization (select_related, prefetch_related, indexing)
+Multi-tenancy patterns in Django
+
+
+Part 10 — Applied Concepts / Real-World Projects
+Mapped to: "Applied concepts + Build something real"
+
+Project 1: Build a Blog with comments, tags, and an RSS feed
+Project 2: Build a REST API for a Task Manager (with DRF + JWT auth)
+Project 3: Build a SaaS starter — multi-user, subscriptions, dashboard
+Project 4: Deploy a production-ready Django app end-to-end on a VPS
+
+
+Part 11 — Contributing to the Book
+Community-first, open source spirit
+
+How to contribute chapters or corrections
+Writing style guide for contributors
+GitHub workflow for the book repo
+Roadmap — chapters still needed
+
+
+Appendices
+
+Glossary of Django terms
+Cheatsheet — manage.py commands
+Cheatsheet — ORM query patterns
+Cheatsheet — common settings and their meanings
+Useful resources — official docs, podcasts, newsletters, repos
+
+
+A few structural notes:
+
+Parts 3–5 form the MVT core (Model-View-Template) and should be read in order — each builds on the previous.
+Part 7 (DRF) is increasingly essential since most modern Django projects pair with a JS frontend or mobile app.
+Like the Frappe book, every chapter should end with a "Quick Recap" and "Try It Yourself" exercise.
+The four projects in Part 10 are deliberately sequenced — each one introduces new complexity and real-world patterns the earlier projects didn't need.
